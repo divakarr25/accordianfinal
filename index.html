@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- project title -->
+    <title>new</title>
+    <!-- favorite icon -->
+    <link rel="shortcut icon" href="assets/images/images.png" type="image/x-icon">
+    <!-- css link  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- javascript link -->
+    <script src="./script.js"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header> <!-- parentContainer -->
+        <div class="container"></div>
+        <h1>Technical Interview Questions</h1>
+    </header>
+
+    <main> <!-- parentContainer -->
+        <div class="topics-grid">
+            <!-- HTML Card -->
+            <div class="topic-card" data-topic="html">
+                <div class="card-header">
+                    <h3>HTML</h3>
+                    <p>Structure & Semantics</p>
+                </div>
+                <div class="card-content">
+                    <div class="accordion" id="html-accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header" data-target="html-basic">
+                                <span>Basic HTML Concepts</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content" id="html-basic">
+                                <div class="question">
+                                    <strong>Q: What is HTML and what does it stand for?</strong>
+                                    <p>HTML stands for HyperText Markup Language. It's the standard markup language used
+                                        to
+                                        create web pages and web applications.</p>
+                                </div>
+                                <div class="question">
+                                    <strong>Q: Explain the difference between HTML elements and tags.</strong>
+                                    <p>HTML tags are the markup that define elements. An element includes the opening
+                                        tag,
+                                        content, and closing tag. For example: &lt;p&gt;Content&lt;/p&gt;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header" data-target="html-semantic">
+                                <span>Semantic HTML</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content" id="html-semantic">
+                                <div class="question">
+                                    <strong>Q: What is semantic HTML and why is it important?</strong>
+                                    <p>Semantic HTML uses meaningful tags that describe content structure (like
+                                        &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;). It improves accessibility, SEO,
+                                        and
+                                        code maintainability.</p>
+                                </div>
+                                <div class="question">
+                                    <strong>Q: Name some semantic HTML5 elements.</strong>
+                                    <p>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;,
+                                        &lt;aside&gt;, &lt;footer&gt;, &lt;figure&gt;, &lt;figcaption&gt;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="explore-btn" onclick="window.open('index.html', '_self');">   
+                        Explore More HTML Questions →
+                    </button>
+                </div>
+            </div>
+
+            <!-- CSS Card -->
+            <div class="topic-card" data-topic="css">
+                <div class="card-header">
+                    <h3>CSS</h3>
+                    <p>Styling & Layout</p>
+                </div>
+                <div class="card-content">
+                    <div class="accordion" id="css-accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header" data-target="css-basics">
+                                <span>CSS Fundamentals</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content" id="css-basics">
+                                <div class="question">
+                                    <strong>Q: What is CSS and what does it stand for?</strong>
+                                    <p>CSS stands for Cascading Style Sheets. It's used to style and layout web pages,
+                                        controlling colors, fonts, spacing, and positioning.</p>
+                                </div>
+                                <div class="question">
+                                    <strong>Q: Explain the CSS box model.</strong>
+                                    <p>The box model consists of content, padding, border, and margin. Each element is
+                                        treated as a rectangular box with these layers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header" data-target="css-flexbox">
+                                <span>Flexbox & Grid</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content" id="css-flexbox">
+                                <div class="question">
+                                    <strong>Q: What is Flexbox and when would you use it?</strong>
+                                    <p>Flexbox is a one-dimensional layout method for arranging items in rows or
+                                        columns.
+                                        It's great for component layouts and centering content.</p>
+                                </div>
+                                <div class="question">
+                                    <strong>Q: Difference between CSS Grid and Flexbox?</strong>
+                                    <p>Grid is two-dimensional (rows and columns), Flexbox is one-dimensional. Use Grid
+                                        for
+                                        page layouts, Flexbox for component layouts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="explore-btn" onclick="window.open('index.html', '_self');">
+                        Explore More CSS Questions →
+                    </button>
+                </div>
+            </div>
+
+            <!-- JavaScript Card -->
+            <div class="topic-card" data-topic="javascript">
+                <div class="card-header">
+                    <h3>JavaScript</h3>
+                    <p>Logic & Interactivity</p>
+                </div>
+                <div class="card-content">
+                    <div class="accordion" id="js-accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header" data-target="js-basics">
+                                <span>JavaScript Fundamentals</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content" id="js-basics">
+                                <div class="question">
+                                    <strong>Q: What is JavaScript and what can it do?</strong>
+                                    <p>JavaScript is a programming language that enables dynamic content, interactive
+                                        features, and complex functionality in web browsers and servers.</p>
+                                </div>
+                                <div class="question">
+                                    <strong>Q: Explain the difference between let, const, and var.</strong>
+                                    <p>var: function-scoped, can be redeclared. let: block-scoped, can be reassigned.
+                                        const:
+                                        block-scoped, cannot be reassigned.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header" data-target="js-async">
+                                <span>Asynchronous JavaScript</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content" id="js-async">
+                                <div class="question">
+                                    <strong>Q: What are Promises in JavaScript?</strong>
+                                    <p>Promises are objects representing the eventual completion or failure of an
+                                        asynchronous operation, providing a cleaner alternative to callbacks.</p>
+                                </div>
+                                <div class="question">
+                                    <strong>Q: Explain async/await syntax.</strong>
+                                    <p>async/await provides a more readable way to work with Promises. async functions
+                                        return Promises, await pauses execution until Promise resolves.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="explore-btn" onclick="window.open('index.html', '_self');">
+                        Explore More JS Questions →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script src="./script.js"></script>
+
+    </main> <!-- parentContainer -->
+
+
+
+
+
+
+
+    <footer></footer> <!-- parentContainer -->
+
+</body>
+
+</html>
